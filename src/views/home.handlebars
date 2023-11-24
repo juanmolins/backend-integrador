@@ -1,0 +1,18 @@
+
+<section class="container-realTime">
+    <h1>Home</h1>
+    <div class="real-time_list" id="container-realTime">
+        {{#each productList}}
+        <div class="card" data-id="{{this.id}}">
+            <article>
+                <img src="{{this.thumbnails}}" alt="{{this.title}}" width="200px">
+            </article>
+            <div class="card-body">
+                <h4>{{this.title}}</h4>
+                <p>${{this.price}}</p>
+                <button class="delete-product" id="delete-product" data-id="{{this.id}}" >Eliminar</button>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</section>
